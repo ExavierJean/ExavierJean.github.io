@@ -71,7 +71,10 @@ footer {
 
 body {
      background-color: black;
-     height: 1000px;
+}
+
+div.not-sorry {
+     height: 1000px; 
 }
 
 div.main {
@@ -171,7 +174,7 @@ div.name-block {
      display: block;
 }
 
-.hidden {
+.hidden,.sorry {
      display: none;
 }
 
@@ -187,7 +190,20 @@ div.name-block {
   100%{color: rgb(0, 0 , 127)}
 }
 
+@media only screen and (max-width: 1674px) {
+     .not-sorry {
+          display: none;
+     }
 
+     .sorry {
+          display: block;
+     }
+
+     .sorry p {
+          color: white;
+          font-size: 3em;
+     }
+}
 
 
 
